@@ -1,0 +1,1 @@
+KPI cards: Revenue, Profit, Units Sold, Orders. Charts: monthly revenue, category performance, regional performance, channel mix, profit trend. Slicers: date, region, category, channel.
