@@ -1,101 +1,36 @@
 # Retail Sales Performance Dashboard
 
-**Power BI | SQL | Python | Microsoft Excel | Pandas**
+End-to-end retail analytics project using Python, SQL and Power BI to monitor revenue, profit, units, regional performance and category performance.
 
-## Project Overview
-
-An end-to-end retail sales analytics project that evaluates revenue, profit, regional performance, product categories, and monthly sales trends using SQL, Python, and Power BI.
-
-## Business Problem
-
-Retail managers need a centralized dashboard to monitor business performance, identify high-performing regions and product categories, and support data-driven sales planning.
-
-## Objectives
-
-- Analyse 50,000 retail transactions
-- Identify revenue and profit trends
-- Compare regional and category performance
-- Build interactive Power BI KPIs
-- Generate business recommendations for sales growth
-
-## Tools & Technologies
-
-- Power BI
-- SQL
-- Python (Pandas, Matplotlib)
-- Microsoft Excel
+## Business objective
+Turn transaction-level retail data into a concise management dashboard for sales and performance monitoring.
 
 ## Dataset
+50,000 retail transactions containing date, region, category, product, channel, units sold, revenue and profit.
 
-**50,000 retail sales transactions** containing:
+## Workflow
+1. Validate the source data.
+2. Calculate overall sales KPIs.
+3. Compare regional and category performance.
+4. Analyse monthly revenue trends.
+5. Prepare Power BI reporting outputs.
 
-- Date
-- Region
-- Category
-- Product
-- Sales Channel
-- Units Sold
-- Revenue
-- Profit
+## Dashboard
+The repository includes a dashboard preview and supporting charts in images/. The Power BI guide documents the recommended KPI cards, visuals and slicers.
 
-## Dashboard KPIs
+## Repository structure
+- data/ — retail transaction dataset
+- notebooks/ — reproducible Python analysis
+- sql/ — SQL reporting queries
+- dashboard/ — Power BI build notes
+- images/ — dashboard previews
+- requirements.txt — dependencies
 
-| KPI | Value |
-|---|---:|
-| Orders | **50,000** |
-| Revenue | **$15.26M** |
-| Profit | **$3.37M** |
-| Units Sold | **399,004** |
-| Top Region | **South** |
-| Top Category | **Grocery** |
+## Run
+Install requirements.txt and open notebooks/retail_sales_performance.ipynb in Jupyter.
 
-## Results & Findings
+## Skills demonstrated
+Python, Pandas, data validation, EDA, SQL, Power BI, KPI reporting and business analysis.
 
-- The **South** region generated the highest revenue and should be prioritised for expansion.
-- **Grocery** was the strongest performing category across total sales.
-- Monthly revenue trends reveal seasonal demand patterns useful for inventory planning.
-- Category and regional comparisons help identify underperforming business segments.
-- Revenue and profit should be reviewed together so strong sales growth does not hide weaker margins.
-
-## Dashboard Output
-
-The Power BI dashboard includes:
-
-- Revenue & Profit KPI cards
-- Monthly Sales Trend
-- Regional Performance
-- Category Performance
-- Interactive slicers for region, category and channel
-
-![Retail Sales Dashboard](images/dashboard_overview.png)
-
-## Business Recommendations
-
-1. Increase inventory allocation for high-performing regions.
-2. Focus promotional campaigns on weaker categories.
-3. Use monthly trend analysis for demand planning and sales targets.
-4. Monitor profit alongside revenue when evaluating regional performance.
-
-## Project Structure
-
-```text
-Retail-Sales-Performance-Dashboard/
-├── data/
-├── notebooks/
-├── sql/
-├── dashboard/
-├── images/
-├── requirements.txt
-└── README.md
-```
-
-## How to Run
-
-```bash
-pip install -r requirements.txt
-jupyter notebook notebooks/retail_sales_performance.ipynb
-```
-
-## Conclusion
-
-This project demonstrates a complete retail analytics workflow from data preparation and SQL analysis to interactive Power BI reporting and business decision support.
+## Author
+Amrutha S Panicker — MSc Data Analytics | BCA
