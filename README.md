@@ -1,36 +1,40 @@
-# Retail Sales Performance Dashboard
+# Retail Sales Performance
 
-End-to-end retail analytics project using Python, SQL and Power BI to monitor revenue, profit, units, regional performance and category performance.
+This project uses 50,000 retail transactions to compare sales and profit across products, categories, regions and channels.
 
-## Business objective
-Turn transaction-level retail data into a concise management dashboard for sales and performance monitoring.
+## Questions
+- Which products and categories contribute the most revenue and profit?
+- Which regions and channels have stronger sales?
+- How does profit margin differ between segments?
+- How has revenue changed month to month?
 
-## Dataset
-50,000 retail transactions containing date, region, category, product, channel, units sold, revenue and profit.
+## Data
+The dataset contains date, region, category, product, channel, units sold, revenue and profit.
 
-## Workflow
-1. Validate the source data.
-2. Calculate overall sales KPIs.
-3. Compare regional and category performance.
-4. Analyse monthly revenue trends.
-5. Prepare Power BI reporting outputs.
+## Analysis
+The notebook checks data quality, calculates overall sales measures, groups performance by region, category, product and channel, and calculates profit margin. It also reports monthly revenue and profit changes.
 
-## Dashboard
-The repository includes a dashboard preview and supporting charts in images/. The Power BI guide documents the recommended KPI cards, visuals and slicers.
+Revenue and profit are shown separately. A segment with high revenue may have a lower profit margin, so both measures should be considered.
 
-## Repository structure
-- data/ — retail transaction dataset
-- notebooks/ — reproducible Python analysis
-- sql/ — SQL reporting queries
-- dashboard/ — Power BI build notes
-- images/ — dashboard previews
-- requirements.txt — dependencies
+## Files
+- `data/` — retail transaction dataset
+- `notebooks/retail_sales_performance.ipynb` — analysis
+- `sql/retail_sales_analysis.sql` — PostgreSQL queries
+- `dashboard/` — Power BI layout notes
+- `images/` — chart and dashboard previews
 
 ## Run
-Install requirements.txt and open notebooks/retail_sales_performance.ipynb in Jupyter.
+From the repository root:
 
-## Skills demonstrated
-Python, Pandas, data validation, EDA, SQL, Power BI, KPI reporting and business analysis.
+```bash
+python -m pip install -r requirements.txt
+jupyter notebook
+```
+
+Open `notebooks/retail_sales_performance.ipynb` and run the cells in order.
+
+## Tools
+Python, Pandas, Matplotlib, PostgreSQL and Power BI.
 
 ## Author
-Amrutha S Panicker — MSc Data Analytics | BCA
+Amrutha S Panicker | MSc Data Analytics | BCA
