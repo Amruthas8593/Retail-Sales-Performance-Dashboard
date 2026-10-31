@@ -1,0 +1,13 @@
+// Create these measures in the Retail table.
+Total Revenue = SUM(Retail[Revenue])
+Total Profit = SUM(Retail[Profit])
+Units Sold = SUM(Retail[Units_Sold])
+Transactions = COUNTROWS(Retail)
+Profit Margin % = DIVIDE([Total Profit], [Total Revenue])
+Average Revenue per Transaction = DIVIDE([Total Revenue], [Transactions])
+
+// Add and mark a Date table related to Retail[Date] before using time intelligence.
+Revenue Previous Month = CALCULATE([Total Revenue], DATEADD('Date'[Date], -1, MONTH))
+Revenue MoM Change % = DIVIDE([Total Revenue] - [Revenue Previous Month], [Revenue Previous Month])
+Profit Previous Month = CALCULATE([Total Profit], DATEADD('Date'[Date], -1, MONTH))
+Profit MoM Change % = DIVIDE([Total Profit] - [Profit Previous Month], [Profit Previous Month])
